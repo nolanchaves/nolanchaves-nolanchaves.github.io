@@ -1,0 +1,48 @@
+<!--
+Programming Mobile Apps
+Assignment 1
+Created By: Nolan Chaves
+Email: nchaves6736@conestogac.on.ca
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+      <title>Customer Label Print</title>
+      <!--jquery-->
+      <script src="js/lib/jquery-2.1.4.js"></script>
+      <!--jquery mobile-->
+      <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+      <!--jquery mobile stylesheet-->
+      <link rel="stylesheet" href="css/lib/jquery.mobile-1.4.5.css">
+      <link rel="stylesheet" href="css/mystyle.css">
+      <script src="js/global.js"></script>
+      <script src="js/facade.js"></script>
+
+   </head>
+   <body>
+      <div id="labelCustomPrinting" data-role="page">
+         <header data-role="header" data-theme="a" data-position="fixed">
+            <h1>Input Label Details</h1>
+         </header>
+         <section data-role="content">
+            <form id="frmAdd" name="frmAdd">
+               <label for="txtPosition">Vending Position:</label>
+               <input type="text" id="txtPosition" name="txtPosition" data-clear-btn="true">
+               <label for="txtPartNumber">Part Number:</label>
+               <input type="text" id="txtPartNumber" name="txtPartNumber" data-clear-btn="true">
+               <label for="txtDescription">Description:</label>
+               <input type="text" id="txtDescription" name="txtDescription" data-clear-btn="true">
+               <button type="button" id="btnPrint" name="btnPrint" data-inline="true" class="ui-btn-active">Print Label
+               </button>
+            </form>
+
+            <label id="lblOutput"></label>
+         </section>
+         <footer data-role="footer" data-theme="a" data-position="fixed">
+            <h1> &copy; 2024 Nolan Chaves </h1>
+         </footer>
+      </div>
+   </body>
+</html>
