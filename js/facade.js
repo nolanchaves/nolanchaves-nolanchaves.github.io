@@ -35,7 +35,11 @@ function print2(){
     "^FS ^FO195,115^A0N,35,35^FD${description}
     ^FS ^XZ^XA^MD0^XZ`);
     
-    document.write(message);
-    window.print();
+    let iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    iframe.contentDocument.write(message);
+    iframe.contentWindow.print();
 
 };
