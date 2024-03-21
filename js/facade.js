@@ -13,7 +13,7 @@ function print(){
     let message = (`
     ^XA^PQ1^MD15 ^FO25,50^A0N,100,80^FD${position} 
     ^FS ^FO195,55^A0N,55,45^FD${partNumber}
-    "^FS ^FO195,115^A0N,35,35^FD${description}
+    ^FS ^FO195,115^A0N,35,35^FD${description}
     ^FS ^XZ^XA^MD0^XZ`);
 
     let newWindow = window.open('', '_blank');
@@ -32,7 +32,7 @@ function print2(){
     let message = (`
     ^XA^PQ1^MD15 ^FO25,50^A0N,100,80^FD${position} 
     ^FS ^FO195,55^A0N,55,45^FD${partNumber}
-    "^FS ^FO195,115^A0N,35,35^FD${description}
+    ^FS ^FO195,115^A0N,35,35^FD${description}
     ^FS ^XZ^XA^MD0^XZ`);
     
     let iframe = document.createElement('iframe');
